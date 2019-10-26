@@ -1,2 +1,7 @@
-# HousR
+# Housr
 Tindr for housing
+
+Features:
+
+
+
