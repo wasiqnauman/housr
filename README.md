@@ -2,6 +2,7 @@
 Tindr for housing
 
 Features:
+- Find best housing based off of crimes within the housing area and income
 
 ## Available Scripts
 
