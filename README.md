@@ -1,4 +1,4 @@
-# Housr
+# Houser
 Tindr for housing
 
 Features:
