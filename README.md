@@ -1,2 +1,2 @@
-# housr
-Tindr but for housing.
+# HousR
+Tindr for housing
