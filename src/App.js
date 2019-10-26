@@ -1,30 +1,32 @@
 import React from 'react';
-import logo from './media/logo.png';
-import wooden from './media/dawn-main.jpg';
+import Logo from './media/houser-logo.png';
+import MainPhoto from './media/dawn-main.jpg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-        <header class="v-header container">
-          <div class="fullscreen-photo-wrap">
-            <img src={wooden} alt="wooden-housing" class="main-img" />
+        <header className="v-header container">
+          <div className="fullscreen-photo-wrap">
+            <img src={MainPhoto} alt="main-housing" className="main-img" />
           </div>
-          <div class="header-overlay"></div>
-          <div class="header-content">
-            <img src={logo} alt="houser-logo" class="houser-logo" />
-            <h1 class="display-1">Houser</h1>
-            <p class="pt-2">The Tinder of housing</p>
-            {/* <form action="/action_page.php">
-              <div class="input-group mb-4 border rounded-pill p-1">
-                <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon3" class="form-control bg-none border-0" />
-                <div class="input-group-append border-0">
-                  <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+          <div className="header-overlay"></div>
+          <div className="header-content">
+            <img src={Logo} alt="houser-logo" className="houser-logo" />
+            <small><p className="pt-2 main-text"><em>“It is hard to argue that housing is not a fundamental human need. Decent, affordable housing should be a basic right for everybody in this country.”</em> - Matthew Desmond</p></small>
+            {/* an associate professor at Harvard University for social sciences */}
+            <div className="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+              <div className="input-group">
+                <div className="input-group-prepend">
+                  <button id="button-addon2" type="submit" className="btn btn-link text-danger"><i className="fa fa-search"></i></button>
                 </div>
+                <input type="search" placeholder="Enter an address or city" className="form-control border-0" />
               </div>
-            </form> */}
+            </div>
           </div>
         </header>
       </header>
