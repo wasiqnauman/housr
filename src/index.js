@@ -9,14 +9,18 @@ import InOrOutForm from './Components/InOrOutForm';
 import Ammenities from './Components/AmenitiesForm';
 import Ownership from './Components/RentOrOwnForm';
 import GoogleMaps from './Components/GoogleMaps';
+<<<<<<< Updated upstream
 import HouseView from './Components/HouseView';
+=======
+import App from './App';
+>>>>>>> Stashed changes
 
 const routing = (
     <Router>
         <div>
             <Switch>
                 <Route exact path="/">
-                    <HomePage />
+                    <App />
                 </Route>
                 <Route path="/income">
                     <UserForm />
