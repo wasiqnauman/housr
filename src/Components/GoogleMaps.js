@@ -6,10 +6,10 @@ const HandleApiLoaded = ({ map, maps }) => <div></div>;
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 33.75,
-      lng: -84.38
+      lat: 33.7733869,
+      lng: -84.4665636
     },
-    zoom: 8
+    zoom: 20
   };
 
   render() {
@@ -24,9 +24,9 @@ class SimpleMap extends Component {
           onGoogleApiLoaded={({ map, maps }) => HandleApiLoaded(map, maps)}
         >
           <HandleApiLoaded
-            lat={33.7557}
-            lng={-84.3884}
-            text="My Marker"
+            lat={33.7733869}
+            lng={-84.4665636}
+            text="1600 Ezra Church Dr NW, Atlanta, GA 30314"
           />
         </GoogleMapReact>
       </div>

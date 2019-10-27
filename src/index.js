@@ -8,19 +8,17 @@ import HomePage from './Components/HomePage';
 import InOrOutForm from './Components/InOrOutForm';
 import Ammenities from './Components/AmenitiesForm';
 import Ownership from './Components/RentOrOwnForm';
-import GoogleMaps from './Components/GoogleMaps';
-<<<<<<< Updated upstream
 import HouseView from './Components/HouseView';
-=======
-import App from './App';
->>>>>>> Stashed changes
+import HouseView2 from './Components/HouseView2';
+import HouseView3 from './Components/HouseView3';
+import MapView from './Components/GoogleMapView';
 
 const routing = (
     <Router>
         <div>
             <Switch>
                 <Route exact path="/">
-                    <App />
+                    <HomePage />
                 </Route>
                 <Route path="/income">
                     <UserForm />
@@ -34,11 +32,17 @@ const routing = (
                 <Route exact path="/ownership">
                     <Ownership />
                 </Route>
-                <Route path="/map">
-                    <GoogleMaps />
-                </Route>
                 <Route exact path="/house-viewing">
                     <HouseView />
+                </Route>
+                <Route exact path="/house-viewing2">
+                    <HouseView2 />
+                </Route>
+                <Route exact path="/house-viewing3">
+                    <HouseView3 />
+                </Route>
+                <Route exact path="/map-view">
+                    <MapView />
                 </Route>
             </Switch>
         </div>
