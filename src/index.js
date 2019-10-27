@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import UserForm from './Components/UserForm';
 import HomePage from './Components/HomePage';
+import App from './App';
 
 const routing = (
     <Router>
@@ -13,8 +14,11 @@ const routing = (
                 <Route exact path="/">
                     <HomePage />
                 </Route>
-                <Route path="/details">
+                <Route path="/income">
                     <UserForm />
+                </Route>
+                <Route exact path="/ammenities">
+                    <HomePage />
                 </Route>
             </Switch>
         </div>

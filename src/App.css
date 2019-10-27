@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #962D3E;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -118,5 +118,9 @@
   background-color: white;
   border-radius: 25px;
   display: block;
-  margin: 5% auto 30% auto;
+  margin: 0 auto 5% auto;
+}
+
+.stretch-btn {
+  width: 28%;
 }
