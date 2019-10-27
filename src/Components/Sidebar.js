@@ -7,7 +7,7 @@ export default props => {
             <a className="menu-item" href="/">
                 Home
             </a>
-            <a className="menu-item" href="/favorite">
+            <a className="menu-item" href="/favorites">
                 Favorites Houses
             </a>
             <a className="menu-item" href="/income">

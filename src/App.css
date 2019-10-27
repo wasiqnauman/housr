@@ -69,6 +69,12 @@
   padding-bottom: 25%;
 }
 
+.header-content2 {
+  z-index: 2;
+  margin-bottom: 0 !important;
+  padding-bottom: 5%;
+}
+
 .header-content h1 {
   font-size: 50px;
   margin-bottom: 0;

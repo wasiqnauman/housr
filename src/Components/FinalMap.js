@@ -10,7 +10,7 @@ import Logo from '../media/houser-logo.png';
 import SideBar from './Sidebar';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export class GoogleMapsView extends Component {
+export class FinalMap extends Component {
     render() {
         return (
             <div>
@@ -26,18 +26,14 @@ export class GoogleMapsView extends Component {
                             alt="Houser Logo"
                         />
                     </Navbar.Brand>
-                    <a href="/house-viewing3"><button id="button-addon2" type="submit" className="btn btn-link text-dark"><i className="fa fa-eye fa-2x"></i></button></a>
+                    <a href="/favorites"><button id="button-addon2" type="submit" className="btn btn-link text-dark"><i className="fa fa-eye fa-2x"></i></button></a>
                 </Navbar>
                 <div className="middle">
                     <GoogleMaps />
                 </div>
-                <div className="bottom">
-                    <a href="/favorites" className="half-left"><button id="check" type="submit" className="btn btn-link"><i className="fa fa-check fa-5x"></i></button></a>
-                    <a href="/favorites" className="half-right"><button id="x-mark" type="submit" className="btn btn-link"><i className="fa fa-times fa-5x"></i></button></a>
-                </div >
-            </div >
+            </div>
         )
     }
 }
 
-export default GoogleMapsView
+export default FinalMap

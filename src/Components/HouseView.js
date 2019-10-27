@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BottomButton from './BottomButtons';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -75,11 +74,12 @@ export class HouseView extends Component {
                         </div>
                         <div className="image-slide">
                             <img src={H1P2} class="img-inside" />
-                            <p className="legend">3 bd, 3 ba, 1,280 sqft</p>
+                            <p className="legend">3 bd, 2 ba, 1,670 sqft</p>
                         </div>
                         <div className="image-slide">
                             <img src={H1P3} class="img-inside" />
-                            <p className="legend">Est. payment: $1,986/mo</p>
+                            <p className="legend">Est. payment: $1,086/mo</p>
+
                         </div>
                     </Carousel>
                 </div>
@@ -87,7 +87,6 @@ export class HouseView extends Component {
                     <a href="/house-viewing2" className="half-left"><button id="check" type="submit" className="btn btn-link"><i className="fa fa-check fa-5x"></i></button></a>
                     <a href="/house-viewing2" className="half-right"><button id="x-mark" type="submit" className="btn btn-link"><i className="fa fa-times fa-5x"></i></button></a>
                 </div>
-                <BottomButton />
             </div>
         )
     }
