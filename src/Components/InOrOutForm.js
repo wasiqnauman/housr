@@ -21,23 +21,20 @@ export class FormPersonalDetails extends Component {
                     <img src={Logo} alt="houser-logo" className="houser-logo" />
                     {/* <AppBar title="Enter User Details" /> */}
                     <div className="form-container">
-                        <h1 className="text-center mt-4 text-dark"><strong>What is your income?</strong></h1>
-                        <h6 className="text-center mt-4 text-dark">Finance</h6>
+                        <h1 className="text-center mt-4 text-dark"><strong>Would you like to live in the city?</strong></h1>
+                        <h6 className="text-center mt-4 text-dark">Location</h6>
                         <form>
                             <div className="dropdown text-center mt-4">
                                 <button className="btn btn-danger dropdown-toggle stretch-btn p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    Select income </button>
+                                    Select location </button>
                                 <div className="dropdown-menu" >
-                                    <a className="dropdown-item" href="/amenities">$0 - $30,000</a>
-                                    <a className="dropdown-item" href="/amenities">$30,001 - $50,000</a>
-                                    <a className="dropdown-item" href="/amenities">$50,001 - $80,000</a>
-                                    <a className="dropdown-item" href="/amenities">$80,001 - $100,000</a>
-                                    <a className="dropdown-item" href="/amenities">$100,001 - $500,000</a>
-                                    <a className="dropdown-item" href="/amenities">$500,001+</a>
+                                    <a className="dropdown-item" href="/ownership">Doesn't matter</a>
+                                    <a className="dropdown-item" href="/ownership">Absolutely! I love the city!</a>
+                                    <a className="dropdown-item" href="/ownership">I'd rather the outskirts. Less noise!</a>
                                 </div>
                             </div>
                             <div className="text-center mt-5 align-bottom">
-                                <a className="btn btn-info p-2 mt-5" href="/">Home</a>
+                                <a className="btn btn-info p-2 mt-5" href="/amenities">Back</a>
                             </div>
                         </form>
                     </div>
