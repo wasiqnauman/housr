@@ -9,9 +9,8 @@ import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 export class HomePage extends Component {
     submitForm(e) {
-        e.preventDefault()
-        console.log("test");
-        this.props.history.push('/details');
+        e.preventDefault();
+        this.props.history.push('/income');
     }
 
     render() {

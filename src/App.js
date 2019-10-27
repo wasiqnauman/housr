@@ -1,16 +1,17 @@
 import React from 'react';
 import Logo from './media/houser-logo.png';
 import MainPhoto from './media/dawn-main.jpg';
+import Tiles from './Tiles';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 function App() {
-  tilelist = [
+  var tilelist = [
     {
       name: "place 1",
       location: "location 1 ",
-      description:"desc",
+      description: "desc",
       price: 1
     },
     {
@@ -24,8 +25,8 @@ function App() {
       location: "location 3 ",
       description: "desc",
       price: 3
-    },
-  ]
+    }
+  ];
   return (
     <div className="App">
       <header className="App-header">
@@ -46,7 +47,7 @@ function App() {
                 </div>
                 <input type="search" placeholder="Enter an address or city" className="form-control border-0" />
               </div>
-              <Tiles tilelist={tilelist}/>
+              <Tiles tilelist={tilelist} />
             </div>
           </div>
         </header>
