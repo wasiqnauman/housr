@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BottomButton from './BottomButtons';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -87,8 +86,6 @@ export class HouseView2 extends Component {
                     <a href="/house-viewing3" className="half-left"><button id="check" type="submit" className="btn btn-link"><i className="fa fa-check fa-5x"></i></button></a>
                     <a href="/house-viewing3" className="half-right"><button id="x-mark" type="submit" className="btn btn-link"><i className="fa fa-times fa-5x"></i></button></a>
                 </div>
-                {/* <GoogleMaps /> */}
-                <BottomButton />
             </div>
         )
     }

@@ -12,6 +12,9 @@ import HouseView from './Components/HouseView';
 import HouseView2 from './Components/HouseView2';
 import HouseView3 from './Components/HouseView3';
 import MapView from './Components/GoogleMapView';
+import Favorites from './Components/Favorites';
+import FinalMap from './Components/FinalMap';
+
 
 const routing = (
     <Router>
@@ -43,6 +46,12 @@ const routing = (
                 </Route>
                 <Route exact path="/map-view">
                     <MapView />
+                </Route>
+                <Route exact path="/favorites">
+                    <Favorites />
+                </Route>
+                <Route exact path="/final-map">
+                    <FinalMap />
                 </Route>
             </Switch>
         </div>
