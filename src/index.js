@@ -8,6 +8,7 @@ import HomePage from './Components/HomePage';
 import InOrOutForm from './Components/InOrOutForm';
 import Ammenities from './Components/AmenitiesForm';
 import Ownership from './Components/RentOrOwnForm';
+import GoogleMaps from './Components/GoogleMaps';
 
 const routing = (
     <Router>
@@ -27,6 +28,9 @@ const routing = (
                 </Route>
                 <Route exact path="/ownership">
                     <Ownership />
+                </Route>
+                <Route path="/Map">
+                    <GoogleMaps />
                 </Route>
             </Switch>
         </div>
