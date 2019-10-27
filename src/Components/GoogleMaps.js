@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+const HandleApiLoaded = ({ map, maps }) => <div></div>;
 
-const handleApiLoaded = ({ map,maps }) => <div>hi</div>;
- 
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
@@ -12,7 +11,7 @@ class SimpleMap extends Component {
     },
     zoom: 8
   };
- 
+
   render() {
     return (
       // Important! Always set the container height explicitly
@@ -22,9 +21,9 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           yesIWantToUseGoogleMapApiInternals
-          onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
+          onGoogleApiLoaded={({ map, maps }) => HandleApiLoaded(map, maps)}
         >
-          <handleApiLoaded
+          <HandleApiLoaded
             lat={33.7557}
             lng={-84.3884}
             text="My Marker"
@@ -34,5 +33,5 @@ class SimpleMap extends Component {
     );
   }
 }
- 
+
 export default SimpleMap; 

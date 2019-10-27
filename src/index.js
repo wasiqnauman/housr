@@ -9,6 +9,7 @@ import InOrOutForm from './Components/InOrOutForm';
 import Ammenities from './Components/AmenitiesForm';
 import Ownership from './Components/RentOrOwnForm';
 import GoogleMaps from './Components/GoogleMaps';
+import HouseView from './Components/HouseView';
 
 const routing = (
     <Router>
@@ -29,8 +30,11 @@ const routing = (
                 <Route exact path="/ownership">
                     <Ownership />
                 </Route>
-                <Route path="/Map">
+                <Route path="/map">
                     <GoogleMaps />
+                </Route>
+                <Route exact path="/house-viewing">
+                    <HouseView />
                 </Route>
             </Switch>
         </div>

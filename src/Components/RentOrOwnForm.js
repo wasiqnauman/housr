@@ -28,8 +28,8 @@ export class FormPersonalDetails extends Component {
                                 <button className="btn btn-danger dropdown-toggle stretch-btn p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown">
                                     Select ownership </button>
                                 <div className="dropdown-menu" >
-                                    <a className="dropdown-item" href="/">I'm renting!</a>
-                                    <a className="dropdown-item" href="/">I'm owning!</a>
+                                    <a className="dropdown-item" href="/house-viewing">I'm renting!</a>
+                                    <a className="dropdown-item" href="/house-viewing">I'm owning!</a>
                                 </div>
                             </div>
                             <div className="text-center mt-5 align-bottom">
