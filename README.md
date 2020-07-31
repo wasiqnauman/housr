@@ -1,4 +1,5 @@
-# Houser
+# Houser (Georgia Tech Hackathon project 2019)
+
 Tindr for housing
 
 Features:
